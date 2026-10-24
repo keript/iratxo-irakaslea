@@ -1,1 +1,38 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#F7F1DE;
+}
 
+.navbar{
+    background:#2F6B45;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    font-weight:bold;
+}
+
+.brand img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.navbar nav{
+    display:flex;
+    gap:20px;
+}
+
+.navbar nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
