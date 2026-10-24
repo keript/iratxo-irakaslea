@@ -9,59 +9,100 @@
 <style>
 
 main{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
     padding:30px;
 }
 
 .hero{
     text-align:center;
-    margin-bottom:40px;
+    margin-bottom:30px;
 }
 
 .hero img{
     width:180px;
     border-radius:50%;
+    border:6px solid #dfe7df;
 }
 
 .hero h1{
     color:#2F6B45;
-    font-size:42px;
+    font-size:48px;
+    margin-bottom:10px;
 }
 
-.box{
+.hero p{
+    font-size:20px;
+}
+
+.card{
     background:white;
     border-radius:20px;
-    padding:20px;
-    margin-bottom:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,.10);
 }
 
-.box h2{
+.card h2{
     color:#2F6B45;
+    margin-top:0;
 }
 
 .examples{
     display:flex;
-    gap:20px;
+    gap:15px;
     flex-wrap:wrap;
 }
 
 .example{
     background:#A8D08D;
-    padding:15px;
+    padding:15px 20px;
     border-radius:15px;
+    font-size:28px;
+    font-weight:800;
+}
+
+.columns{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.column{
+    flex:1;
+    min-width:250px;
+    background:#f8f8f8;
+    border-radius:15px;
+    padding:15px;
+}
+
+.word-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:15px;
+}
+
+.word{
+    background:#A8D08D;
+    border-radius:10px;
+    padding:10px 15px;
     font-weight:bold;
+}
+
+.option{
     font-size:24px;
+    margin-bottom:12px;
 }
 
 .line{
-    border-bottom:2px solid #888;
-    height:40px;
-    margin-bottom:15px;
+    border-bottom:2px solid #999;
+    height:35px;
+    margin-bottom:20px;
 }
 
 .check{
+    font-size:18px;
     line-height:2;
 }
 
@@ -87,124 +128,142 @@ main{
 
 <main>
 
-    <section class="hero">
+<section class="hero">
 
-        <img src="../avatar_redes.png" alt="Iratxo Irakaslea">
+    <img src="../avatar_redes.png" alt="Iratxo Irakaslea">
 
-        <h1>🔠 ORT-01 MAIUSKULAK</h1>
+    <h1>🔠 ORT-01 MAIUSKULAK</h1>
 
-        <p>
-            Erronka bakoitza, ikaskuntza bat.
-        </p>
+    <p>Erronka bakoitza, ikaskuntza bat.</p>
 
-    </section>
+</section>
 
-    <section class="box">
+<section class="card">
 
-        <h2>👀 GOGORATU</h2>
+    <h2>👀 GOGORATU</h2>
 
-        <div class="examples">
+    <div class="examples">
 
-            <div class="example">
-                👧 ANE
-            </div>
+        <div class="example">👧 ANE</div>
 
-            <div class="example">
-                🏠 BILBO
-            </div>
+        <div class="example">🏠 BILBO</div>
 
-            <div class="example">
-                💬 KAIXO!
-            </div>
+        <div class="example">💬 KAIXO!</div>
 
-        </div>
+    </div>
 
-        <p>
-            Letra larria erabiltzen dugu:
-        </p>
+    <p>
+    Letra larria erabiltzen dugu:
+    </p>
 
-        <ul>
-            <li>Esaldiaren hasieran</li>
-            <li>Pertsonen izenetan</li>
-            <li>Herrien izenetan</li>
-        </ul>
+    <ul>
+        <li>Esaldiaren hasieran</li>
+        <li>Pertsonen izenetan</li>
+        <li>Herrien izenetan</li>
+    </ul>
 
-    </section>
+</section>
 
-    <section class="box">
+<section class="card">
 
-        <h2>✏️ ORAIN ZUK</h2>
+    <h2>✏️ ORAIN ZUK</h2>
 
-        <p>
-            Sailkatu hitzak:
-        </p>
+    <div class="columns">
 
-        <p>
-            ANE · JON · LEIRE · BILBO · DURANGO · GERNIKA
-        </p>
+        <div class="column">
 
-    </section>
-
-    <section class="box">
-
-        <h2>✅ AUKERATU</h2>
-
-        <p>□ ane &nbsp;&nbsp; □ ANE</p>
-
-        <p>□ bilbo &nbsp;&nbsp; □ BILBO</p>
-
-        <p>□ jon &nbsp;&nbsp; □ JON</p>
-
-    </section>
-
-    <section class="box">
-
-        <h2>🔍 AKATSA AURKITU</h2>
-
-        <p>ane →</p>
-        <div class="line"></div>
-
-        <p>bilbo →</p>
-        <div class="line"></div>
-
-        <p>jon →</p>
-        <div class="line"></div>
-
-    </section>
-
-    <section class="box">
-
-        <h2>⭐ ERRONKA</h2>
-
-        <p>
-            Nire izena __________ da.
-        </p>
-
-        <p>
-            Ni __________ herrian bizi naiz.
-        </p>
-
-    </section>
-
-    <section class="box">
-
-        <h2>✅ PRIMERAN!</h2>
-
-        <div class="check">
-
-            ☐ Pertsonen izenak letra larriz idazten ditut.
-
-            <br>
-
-            ☐ Herrien izenak letra larriz idazten ditut.
-
-            <br>
-
-            ☐ Esaldiak letra larriz hasten dira.
+            <h3>🧒 PERTSONAK</h3>
 
         </div>
 
-    </section>
+        <div class="column">
+
+            <h3>🏠 HERRIAK</h3>
+
+        </div>
+
+    </div>
+
+    <div class="word-list">
+
+        <div class="word">ANE</div>
+
+        <div class="word">JON</div>
+
+        <div class="word">LEIRE</div>
+
+        <div class="word">BILBO</div>
+
+        <div class="word">DURANGO</div>
+
+        <div class="word">GERNIKA</div>
+
+    </div>
+
+</section>
+
+<section class="card">
+
+    <h2>✅ AUKERATU</h2>
+
+    <div class="option">
+        ○ ane &nbsp;&nbsp;&nbsp; ○ ANE
+    </div>
+
+    <div class="option">
+        ○ bilbo &nbsp;&nbsp;&nbsp; ○ BILBO
+    </div>
+
+    <div class="option">
+        ○ jon &nbsp;&nbsp;&nbsp; ○ JON
+    </div>
+
+    <div class="option">
+        ○ durango &nbsp;&nbsp;&nbsp; ○ DURANGO
+    </div>
+
+</section>
+
+<section class="card">
+
+    <h2>🔍 AKATSA AURKITU</h2>
+
+    <p>ane →</p>
+    <div class="line"></div>
+
+    <p>bilbo →</p>
+    <div class="line"></div>
+
+    <p>jon →</p>
+    <div class="line"></div>
+
+</section>
+
+<section class="card">
+
+    <h2>⭐ ERRONKA</h2>
+
+    <p>Nire izena __________________ da.</p>
+
+    <p>Ni __________________ herrian bizi naiz.</p>
+
+</section>
+
+<section class="card">
+
+    <h2>✅ PRIMERAN!</h2>
+
+    <div class="check">
+
+        ☐ Pertsonen izenak letra larriz idazten ditut.<br>
+
+        ☐ Herrien izenak letra larriz idazten ditut.<br>
+
+        ☐ Esaldiak letra larriz hasten dira.<br>
+
+    </div>
+
+</section>
 
 </main>
 
