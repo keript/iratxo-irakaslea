@@ -22,29 +22,77 @@
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-    margin-top:20px;
+    margin-top:15px;
 }
 
 .columns{
     display:flex;
     gap:20px;
-    margin-top:20px;
+    margin-top:25px;
 }
 
 .drop-box{
     flex:1;
     min-height:120px;
-
     border:3px dashed #7BA7E8;
-
     border-radius:15px;
-
     padding:15px;
-
-    font-size:22px;
+    font-size:24px;
     font-weight:800;
-
     background:white;
+}
+
+.semaforo{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.good{
+    flex:1;
+    min-width:250px;
+    background:#ECFDF5;
+    border-radius:15px;
+    padding:15px;
+}
+
+.bad{
+    flex:1;
+    min-width:250px;
+    background:#FFF1F2;
+    border-radius:15px;
+    padding:15px;
+}
+
+.good h3{
+    color:#16A34A;
+}
+
+.bad h3{
+    color:#DC2626;
+}
+
+.check-row{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.iratxo-signature{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    margin-top:25px;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+}
+
+.iratxo-signature img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
 }
 
 @media(max-width:700px){
@@ -125,9 +173,7 @@ Letra larria noiz erabiltzen den ikastea.
 <div class="card gogoratu">
 
 <div class="section-title">
-
 👀 GOGORATU
-
 </div>
 
 <div class="words">
@@ -142,16 +188,38 @@ Letra larria noiz erabiltzen den ikastea.
 
 <div class="rules">
 
-<div class="rule">
-✅ Pertsonen izenak
+<div class="rule">✅ Pertsonen izenak</div>
+
+<div class="rule">✅ Herrien izenak</div>
+
+<div class="rule">✅ Esaldiaren hasiera</div>
+
 </div>
 
-<div class="rule">
-✅ Herrien izenak
+<div class="semaforo">
+
+<div class="good">
+
+<h3>🟢 ONDO</h3>
+
+<p>ANE</p>
+
+<p>BILBO</p>
+
+<p>KAIXO!</p>
+
 </div>
 
-<div class="rule">
-✅ Esaldiaren hasiera
+<div class="bad">
+
+<h3>🔴 GAIZKI</h3>
+
+<p>ane</p>
+
+<p>bilbo</p>
+
+<p>kaixo!</p>
+
 </div>
 
 </div>
@@ -163,9 +231,7 @@ Letra larria noiz erabiltzen den ikastea.
 <div class="card orain-zuk">
 
 <div class="section-title">
-
 ✏️ ORAIN ZUK
-
 </div>
 
 <p>
@@ -180,5 +246,147 @@ Sailkatu hitzak.
 
 <div class="word">LEIRE</div>
 
-<div class="word
+<div class="word">UNAI</div>
 
+<div class="word">BILBO</div>
+
+<div class="word">GERNIKA</div>
+
+<div class="word">DURANGO</div>
+
+<div class="word">IRUÑEA</div>
+
+</div>
+
+<div class="columns">
+
+<div class="drop-box">
+
+🧒 PERTSONAK
+
+</div>
+
+<div class="drop-box">
+
+🏠 HERRIAK
+
+</div>
+
+</div>
+
+</div>
+
+<!-- AUKERATU -->
+
+<div class="card aukeratu">
+
+<div class="section-title">
+✅ AUKERATU
+</div>
+
+<div class="check-row">
+○ ane &nbsp;&nbsp;&nbsp; ● ANE
+</div>
+
+<div class="check-row">
+○ bilbo &nbsp;&nbsp;&nbsp; ● BILBO
+</div>
+
+<div class="check-row">
+○ jon &nbsp;&nbsp;&nbsp; ● JON
+</div>
+
+<div class="check-row">
+○ gernika &nbsp;&nbsp;&nbsp; ● GERNIKA
+</div>
+
+</div>
+
+<!-- AKATSA AURKITU -->
+
+<div class="card akatsa">
+
+<div class="section-title">
+🔍 AKATSA AURKITU
+</div>
+
+<p>ane → _______________________</p>
+
+<p>bilbo → _______________________</p>
+
+<p>jon → _______________________</p>
+
+<p>gernika → _______________________</p>
+
+</div>
+
+<!-- ERRONKA -->
+
+<div class="card erronka">
+
+<div class="section-title">
+⭐ ERRONKA
+</div>
+
+<p>
+Nire izena __________________ da.
+</p>
+
+<p>
+Ni __________________ herrian bizi naiz.
+</p>
+
+<p>
+Nire laguna __________________ da.
+</p>
+
+<p>
+Idatzi esaldi bat:
+</p>
+
+<p>
+__________________________________
+</p>
+
+</div>
+
+<!-- PRIMERAN -->
+
+<div class="card primeran">
+
+<div class="section-title">
+✅ PRIMERAN
+</div>
+
+<p>☐ Pertsonen izenak letra larriz idazten ditut.</p>
+
+<p>☐ Herrien izenak letra larriz idazten ditut.</p>
+
+<p>☐ Esaldiak letra larriz hasten ditut.</p>
+
+<p>☐ Prest nago hurrengo erronkarako.</p>
+
+</div>
+
+<div class="iratxo-signature">
+
+<img
+src="../avatar_redes.png"
+alt="Iratxo Irakaslea">
+
+<div>
+
+⭐ Primeran!
+
+<br>
+
+Iratxo Irakaslea
+
+</div>
+
+</div>
+
+</main>
+
+</body>
+</html>
