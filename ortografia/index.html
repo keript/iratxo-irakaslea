@@ -2,114 +2,107 @@
 <html lang="eu">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ortografia - Iratxo Irakaslea</title>
 
-<title>Ortografia Euskaraz</title>
+<link rel="stylesheet" href="../assets/estilos.css">
 
 <style>
 
-body{
-
-    font-family:Arial,sans-serif;
-
-    background:#F7F1DE;
-
-    padding:40px;
-}
-
-h1{
-
-    text-align:center;
-
-    color:#2F6B45;
-}
-
-.grid{
-
-    max-width:1000px;
-
-    margin:auto;
-
+.material-grid{
     display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
 }
 
-.txartela{
-
+.material{
     background:white;
-
     border-radius:20px;
-
-    padding:30px;
-
-    text-align:center;
-
+    padding:25px;
     text-decoration:none;
-
-    color:#2F6B45;
-
-    font-size:1.2rem;
-
-    font-weight:bold;
-
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.08);
+    color:#1f2937;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
 }
 
-.txartela:hover{
-
+.material:hover{
     transform:translateY(-3px);
 }
 
+.material h2{
+    color:#2F6B45;
+    margin-top:0;
+}
+
 </style>
+
 </head>
 
 <body>
 
-<h1>🔠 Ortografia Euskaraz</h1>
+<header class="navbar">
 
-<div class="grid">
+<div class="brand">
+<img src="../avatar_redes.png" alt="">
+<span>Iratxo Irakaslea</span>
+</div>
 
-<a class="txartela"
-href="maiuskulak.html">
+<nav>
+<a href="../index.html">Hasiera</a>
+<a href="index.html">Ortografia</a>
+</nav>
 
-🔠 Maiuskulak
+</header>
+
+<main>
+
+<div class="hero">
+
+<img src="../avatar_redes.png" alt="">
+
+<div>
+
+<h1>🔠 ORTOGRAFIA</h1>
+
+<p>
+Erronka bakoitza, ikaskuntza bat.
+</p>
+
+<div class="iratxo-message">
+📚 Aukeratu ikasi nahi duzun araua.
+</div>
+
+</div>
+
+</div>
+
+<div class="material-grid">
+
+<a class="material" href="maiuskulak.html">
+
+<h2>
+ORT-01 MAIUSKULAK
+</h2>
+
+<p>
+Letra larriak.
+</p>
 
 </a>
 
-<a class="txartela"
-href="puntua.html">
+<a class="material" href="puntua.html">
 
-⚫ Puntua
+<h2>
+ORT-02 PUNTUA
+</h2>
 
-</a>
-
-<a class="txartela"
-href="galdera-ikurra.html">
-
-❓ Galdera ikurra
-
-</a>
-
-<a class="txartela"
-href="harridura-ikurra.html">
-
-❗ Harridura ikurra
-
-</a>
-
-<a class="txartela"
-href="h-letra.html">
-
-🅷 H hizkia
+<p>
+Esaldiaren amaieran puntua erabiltzea.
+</p>
 
 </a>
 
 </div>
+
+</main>
 
 </body>
 </html>
