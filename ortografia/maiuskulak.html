@@ -6,55 +6,205 @@
 
 <link rel="stylesheet" href="../assets/estilos.css">
 
+<style>
+
+main{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.hero img{
+    width:180px;
+    border-radius:50%;
+}
+
+.hero h1{
+    color:#2F6B45;
+    font-size:42px;
+}
+
+.box{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.box h2{
+    color:#2F6B45;
+}
+
+.examples{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.example{
+    background:#A8D08D;
+    padding:15px;
+    border-radius:15px;
+    font-weight:bold;
+    font-size:24px;
+}
+
+.line{
+    border-bottom:2px solid #888;
+    height:40px;
+    margin-bottom:15px;
+}
+
+.check{
+    line-height:2;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header class="navbar">
 
-  <div class="brand">
-    <img src="../avatar_redes.png" alt="Iratxo Irakaslea">
-    <span>Iratxo Irakaslea</span>
-  </div>
+    <div class="brand">
+        <img src="../avatar_redes.png" alt="Iratxo Irakaslea">
+        <span>Iratxo Irakaslea</span>
+    </div>
 
-  <nav>
-    <a href="../index.html">Hasiera</a>
-    <a href="index.html">Ortografia</a>
-    <a href="../matematika/index.html">Matematika</a>
-    <a href="../irakurketa/index.html">Irakurketa</a>
-    <a href="../jokoak/index.html">Jokoak</a>
-  </nav>
+    <nav>
+        <a href="../index.html">Hasiera</a>
+        <a href="#">Ortografia</a>
+    </nav>
 
 </header>
 
-<main style="padding:40px;text-align:center;">
+<main>
 
-  <h1>🔠 ORT-01 MAIUSKULAK</h1>
+    <section class="hero">
 
-  <img
-    src="../avatar_redes.png"
-    alt="Iratxo Irakaslea"
-    style="
-      width:180px;
-      border-radius:50%;
-      margin:20px 0;">
+        <img src="../avatar_redes.png" alt="Iratxo Irakaslea">
 
-  <p>
-    Pertsonen izenak, leku-izenak eta
-    esaldiaren hasierako letra larriak.
-  </p>
+        <h1>🔠 ORT-01 MAIUSKULAK</h1>
 
-  <h2>👀 Gogoratu</h2>
+        <p>
+            Erronka bakoitza, ikaskuntza bat.
+        </p>
 
-  <p>
-    Ane • Jon • Bilbo • Durango
-  </p>
+    </section>
 
-  <h2>⭐ Materiala prestatzen</h2>
+    <section class="box">
 
-  <p>
-    Iratxo Ortografia bildumako lehen materiala.
-  </p>
+        <h2>👀 GOGORATU</h2>
+
+        <div class="examples">
+
+            <div class="example">
+                👧 ANE
+            </div>
+
+            <div class="example">
+                🏠 BILBO
+            </div>
+
+            <div class="example">
+                💬 KAIXO!
+            </div>
+
+        </div>
+
+        <p>
+            Letra larria erabiltzen dugu:
+        </p>
+
+        <ul>
+            <li>Esaldiaren hasieran</li>
+            <li>Pertsonen izenetan</li>
+            <li>Herrien izenetan</li>
+        </ul>
+
+    </section>
+
+    <section class="box">
+
+        <h2>✏️ ORAIN ZUK</h2>
+
+        <p>
+            Sailkatu hitzak:
+        </p>
+
+        <p>
+            ANE · JON · LEIRE · BILBO · DURANGO · GERNIKA
+        </p>
+
+    </section>
+
+    <section class="box">
+
+        <h2>✅ AUKERATU</h2>
+
+        <p>□ ane &nbsp;&nbsp; □ ANE</p>
+
+        <p>□ bilbo &nbsp;&nbsp; □ BILBO</p>
+
+        <p>□ jon &nbsp;&nbsp; □ JON</p>
+
+    </section>
+
+    <section class="box">
+
+        <h2>🔍 AKATSA AURKITU</h2>
+
+        <p>ane →</p>
+        <div class="line"></div>
+
+        <p>bilbo →</p>
+        <div class="line"></div>
+
+        <p>jon →</p>
+        <div class="line"></div>
+
+    </section>
+
+    <section class="box">
+
+        <h2>⭐ ERRONKA</h2>
+
+        <p>
+            Nire izena __________ da.
+        </p>
+
+        <p>
+            Ni __________ herrian bizi naiz.
+        </p>
+
+    </section>
+
+    <section class="box">
+
+        <h2>✅ PRIMERAN!</h2>
+
+        <div class="check">
+
+            ☐ Pertsonen izenak letra larriz idazten ditut.
+
+            <br>
+
+            ☐ Herrien izenak letra larriz idazten ditut.
+
+            <br>
+
+            ☐ Esaldiak letra larriz hasten dira.
+
+        </div>
+
+    </section>
 
 </main>
 
