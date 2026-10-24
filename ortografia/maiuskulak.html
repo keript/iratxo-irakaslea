@@ -2,190 +2,133 @@
 <html lang="eu">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>ORT-01 Maiuskulak</title>
 
 <link rel="stylesheet" href="../assets/estilos.css">
 
 <style>
 
+:root{
+    --berde:#2F6B45;
+    --berde-argia:#A8D08D;
+    --urdina:#B7D7F2;
+    --horia:#FFE699;
+    --laranja:#FFD8A8;
+}
+
+body{
+    background:#F7F1DE;
+}
+
 main{
-    max-width:1100px;
+    max-width:1000px;
     margin:auto;
-    padding:30px 20px;
+    padding:30px;
 }
 
 .hero{
+    background:white;
+    border-radius:25px;
+    padding:25px;
+    margin-bottom:25px;
 
-    text-align:center;
-    margin-bottom:30px;
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
 }
 
 .hero img{
-
-    width:180px;
-    height:180px;
-
+    width:100px;
+    height:100px;
     border-radius:50%;
-
-    border:6px solid #dbe6db;
-
-    margin:20px auto;
 }
 
 .hero h1{
-
-    color:#2F6B45;
-    font-size:2.2rem;
-
-    margin-bottom:10px;
+    margin:0;
+    color:var(--berde);
+    font-size:42px;
 }
 
-.txartela{
+.hero p{
+    margin:5px 0;
+}
 
+.card{
     background:white;
+    border-radius:25px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
 
-    border-radius:20px;
+.section-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
 
-    padding:24px;
+    color:var(--berde);
+    font-size:28px;
+    font-weight:800;
 
     margin-bottom:20px;
-
-    box-shadow:
-    0 5px 15px rgba(0,0,0,.08);
 }
 
-.txartela h2{
+.words{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
 
-    margin-top:0;
-    color:#2F6B45;
+.word{
+    background:var(--berde-argia);
+    padding:12px 18px;
+    border-radius:12px;
+    font-size:24px;
+    font-weight:800;
 }
 
 .gogoratu{
-    border-left:8px solid #22c55e;
+    border-left:10px solid #7BC67B;
 }
 
-.orain-zuk{
-    border-left:8px solid #f97316;
+.orainzuk{
+    border-left:10px solid #7BA7E8;
 }
 
 .aukeratu{
-    border-left:8px solid #10b981;
+    border-left:10px solid #8FD3A8;
 }
 
 .akatsa{
-    border-left:8px solid #3b82f6;
+    border-left:10px solid #FFD08A;
 }
 
 .erronka{
-    border-left:8px solid #a855f7;
+    border-left:10px solid #FFE699;
 }
 
 .primeran{
-    border-left:8px solid #fbbf24;
+    border-left:10px solid #CBE896;
 }
 
-.adibideak{
-
-    display:flex;
-    flex-wrap:wrap;
-
-    gap:10px;
-
-    margin-top:15px;
+.option{
+    font-size:26px;
+    margin-bottom:14px;
 }
 
-.txipa{
-
-    background:#9ac27d;
-
-    color:#000;
-
-    padding:10px 15px;
-
-    border-radius:12px;
-
-    font-weight:bold;
-}
-
-.aukera{
-
-    display:block;
-
-    padding:12px;
-
-    background:#f1f5f9;
-
-    border-radius:12px;
-
-    margin-bottom:8px;
-}
-
-.lerroa{
-
-    border-bottom:2px solid #cbd5e1;
-
+.line{
     height:35px;
-
+    border-bottom:2px solid #999;
     margin-bottom:15px;
 }
 
-.iratxo-aholkua{
-
-    margin-top:15px;
-
-    background:#e0f2fe;
-
-    border-radius:15px;
-
+.character-note{
+    background:#ECFDF5;
     padding:15px;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-}
-
-.iratxo-aholkua img{
-
-    width:70px;
-    height:70px;
-
-    border-radius:50%;
-}
-
-.saria{
-
-    text-align:center;
-
-    background:linear-gradient(
-    135deg,
-    #FBBF24,
-    #F59E0B
-    );
-
-    color:white;
-
-    padding:20px;
-
-    border-radius:20px;
-
-    font-size:1.2rem;
-
-    font-weight:bold;
-}
-
-@media(max-width:900px){
-
-    .hero h1{
-        font-size:1.6rem;
-    }
-
-    .txartela{
-        padding:18px;
-    }
+    border-radius:15px;
+    margin-top:15px;
 }
 
 </style>
@@ -203,95 +146,149 @@ main{
 
 <nav>
 <a href="../index.html">Hasiera</a>
-<a href="index.html">Ortografia</a>
-<a href="../matematika/index.html">Matematika</a>
-<a href="../irakurketa/index.html">Irakurketa</a>
-<a href="../jokoak/index.html">Jokoak</a>
+<a href="#">Ortografia</a>
 </nav>
 
 </header>
 
 <main>
 
-<section class="hero">
+<div class="hero">
 
-<h1>🔠 ORT-01 MAIUSKULAK</h1>
+    <img src="../avatar_redes.png"
+    alt="Iratxo Irakaslea">
 
-<img src="../avatar_redes.png" alt="Iratxo Irakaslea">
+    <div>
 
-<p>
-Pertsonen izenak, herrien izenak eta
-esaldiaren hasierako letra larriak.
-</p>
+        <h1>🔠 ORT-01 MAIUSKULAK</h1>
 
-</section>
+        <p>
+        Erronka bakoitza, ikaskuntza bat.
+        </p>
 
-<section class="txartela gogoratu">
+        <div class="character-note">
+            💡 Kaixo! Ni Iratxo Irakaslea naiz.
+            Gaur letra larriak ikasiko ditugu.
+        </div>
 
-<h2>👀 GOGORATU</h2>
-
-<div class="adibideak">
-
-<div class="txipa">🙋 ANE</div>
-
-<div class="txipa">🏠 BILBO</div>
-
-<div class="txipa">💬 KAIXO!</div>
+    </div>
 
 </div>
 
-<p><strong>Letra larria erabiltzen dugu:</strong></p>
+<div class="card gogoratu">
 
-<ul>
-<li>Esaldiaren hasieran.</li>
-<li>Pertsonen izenetan.</li>
-<li>Herrien izenetan.</li>
-</ul>
+    <div class="section-title">
+        👀 GOGORATU
+    </div>
 
-</section>
+    <div class="words">
 
-<section class="txartela orain-zuk">
+        <div class="word">ANE</div>
 
-<h2>✏️ ORAIN ZUK</h2>
+        <div class="word">BILBO</div>
 
-<p>Sailkatu hitzak:</p>
+        <div class="word">KAIXO!</div>
 
-<p>
-ANE · JON · LEIRE · BILBO · DURANGO · GERNIKA
-</p>
+    </div>
 
-<div class="iratxo-aholkua">
-
-<img src="../avatar_redes.png">
-
-<div>
-
-<strong>🧙 Iratxo dio:</strong><br>
-Izen propioek letra larria behar dute!
+    <ul>
+        <li>Esaldiaren hasieran</li>
+        <li>Pertsonen izenetan</li>
+        <li>Herrien izenetan</li>
+    </ul>
 
 </div>
 
+<div class="card orainzuk">
+
+    <div class="section-title">
+        ✏️ ORAIN ZUK
+    </div>
+
+    <p>Sailkatu hitzak.</p>
+
+    <div class="words">
+
+        <div class="word">ANE</div>
+        <div class="word">JON</div>
+        <div class="word">LEIRE</div>
+
+        <div class="word">BILBO</div>
+        <div class="word">DURANGO</div>
+        <div class="word">GERNIKA</div>
+
+    </div>
+
 </div>
 
-</section>
+<div class="card aukeratu">
 
-<section class="txartela aukeratu">
+    <div class="section-title">
+        ✅ AUKERATU
+    </div>
 
-<h2>✅ AUKERATU</h2>
+    <div class="option">
+        ○ ane &nbsp;&nbsp;&nbsp; ○ ANE
+    </div>
 
-<label class="aukera">
-<input type="radio" name="q1"> ane
-</label>
+    <div class="option">
+        ○ bilbo &nbsp;&nbsp;&nbsp; ○ BILBO
+    </div>
 
-<label class="aukera">
-<input type="radio" name="q1"> ANE
-</label>
+    <div class="option">
+        ○ jon &nbsp;&nbsp;&nbsp; ○ JON
+    </div>
 
-<br>
+</div>
 
-<label class="aukera">
-<input type="radio" name="q2"> bilbo
-</label>
+<div class="card akatsa">
 
-<label class="aukera">
-<input type="radio" name="q
+    <div class="section-title">
+        🔍 AKATSA AURKITU
+    </div>
+
+    ane →
+    <div class="line"></div>
+
+    bilbo →
+    <div class="line"></div>
+
+    jon →
+    <div class="line"></div>
+
+</div>
+
+<div class="card erronka">
+
+    <div class="section-title">
+        ⭐ ERRONKA
+    </div>
+
+    <p>
+    Nire izena __________________ da.
+    </p>
+
+    <p>
+    Ni __________________ herrian bizi naiz.
+    </p>
+
+</div>
+
+<div class="card primeran">
+
+    <div class="section-title">
+        ✅ PRIMERAN
+    </div>
+
+    <p>☐ Pertsonen izenak ezagutzen ditut.</p>
+
+    <p>☐ Herrien izenak ezagutzen ditut.</p>
+
+    <p>☐ Letra larria erabiltzen dut.</p>
+
+</div>
+
+</main>
+
+</body>
+</html>
