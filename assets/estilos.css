@@ -36,3 +36,22 @@ body{
     text-decoration:none;
     font-weight:bold;
 }
+.gogoratu{
+  border-left:8px solid #22c55e;
+}
+
+.orain-zuk{
+  border-left:8px solid #f97316;
+}
+
+.aukeratu{
+  border-left:8px solid #10b981;
+}
+
+.akatsa{
+  border-left:8px solid #3b82f6;
+}
+
+.erronka{
+  border-left:8px solid #a855f7;
+}
